@@ -1,62 +1,47 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+body{
+    background: hsla(212, 56%, 46%, 1);
 
-*,
-*::before,
-*::after {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+background: linear-gradient(180deg, hsla(212, 56%, 46%, 1) 0%, hsla(190, 53%, 56%, 1) 100%);
+
+background: -moz-linear-gradient(180deg, hsla(212, 56%, 46%, 1) 0%, hsla(190, 53%, 56%, 1) 100%);
+
+background: -webkit-linear-gradient(180deg, hsla(212, 56%, 46%, 1) 0%, hsla(190, 53%, 56%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3473B9", endColorstr="#54B6CA", GradientType=1 );
+opacity: 0.9;
+text-align: center;
+
 }
-
-html {
-	overflow-x: hidden;
-	color: white;
+img{
+    padding-top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
 }
+h1{
+    color:white;
+    font-family: Poppins;
+    font-weight: bolder;   
+     font-size: 25px;
+     text-align: center;
 
-.card {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	height: 100vh;
-
-	background: hsla(212, 56%, 46%, 1);
-
-	background: linear-gradient(180deg, hsla(212, 56%, 46%, 1) 0%, hsla(190, 53%, 56%, 1) 100%);
-
-	background: -moz-linear-gradient(180deg, hsla(212, 56%, 46%, 1) 0%, hsla(190, 53%, 56%, 1) 100%);
-
-	background: -webkit-linear-gradient(180deg, hsla(212, 56%, 46%, 1) 0%, hsla(190, 53%, 56%, 1) 100%);
-
-	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3473B9", endColorstr="#54B6CA", GradientType=1 );
-	opacity: 0.9;
-	background-position: center;
 }
-
-.card__logo {
-	width: clamp(110px, 8.6vw, 125px);
+p{
+    color:white;
+    font-size: medium;
+    text-align: center;
+    padding-bottom: 30px;
 }
-
-.card__date {
-	font-family: "Poppins", sans-serif;
-	font-weight: 700;
-	text-transform: uppercase;
-	margin-top: 0.5em;
-	font-size: clamp(1.25rem, 1.666vw, 1.5rem);
+@media (max-width:700px)
+{
+img
+{
+  width:6rem;
 }
-
-.card__para {
-	text-align: center;
-	margin-top: clamp(0.5em, 1.2vw, 0.75em);
-	width: min(402.13px, 80%);
-	line-height: 1.5em;
-	font-size: 1rem;
+h1{
+  font-size: 2rem;
 }
-
-.card__quote {
-	display: inline-block;
-	margin-top: clamp(1.7em, 3.333vw, 3em);
-	font-family: "Kaushan Script", cursive;
-	font-size: 0.9rem;
+p{
+  font-size: 1rem;
+}
 }
